@@ -18,10 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (form) {
     var next = form.querySelector('input[name="_next"]');
     if (next) {
-      var origin = window.location.origin;
-      var path = window.location.pathname;
-      var root = path.indexOf('/akhon') === 0 ? '/akhon' : '';
-      next.value = origin + root + '/pages/merci.html';
+      next.value = window.location.origin + '/merci';
     }
   }
 });

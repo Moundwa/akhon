@@ -1,6 +1,23 @@
 {
-  "cleanUrls": false,
+  "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/pages/apropos", "destination": "/apropos", "permanent": true },
+    { "source": "/pages/services", "destination": "/services", "permanent": true },
+    { "source": "/pages/atouts", "destination": "/atouts", "permanent": true },
+    { "source": "/pages/actualites", "destination": "/actualites", "permanent": true },
+    { "source": "/pages/contact", "destination": "/contact", "permanent": true },
+    { "source": "/pages/merci", "destination": "/merci", "permanent": true },
+    { "source": "/index", "destination": "/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/apropos", "destination": "/pages/apropos" },
+    { "source": "/services", "destination": "/pages/services" },
+    { "source": "/atouts", "destination": "/pages/atouts" },
+    { "source": "/actualites", "destination": "/pages/actualites" },
+    { "source": "/contact", "destination": "/pages/contact" },
+    { "source": "/merci", "destination": "/pages/merci" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
